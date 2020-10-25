@@ -4,25 +4,6 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Load other html snippets -->
-    <script>
-      $(document).ready(function(){
-        $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
-      });
-      window.onload = function() {
-        if (window.jQuery) {
-          // jQuery is loaded
-          alert("Yeah!");
-        } else {
-          // jQuery is not loaded
-          alert("Doesn't Work");
-        }
-      }
-    </script>
-
-    <script>
-
-    </script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -51,5 +32,22 @@
     <div id="includeHeader"> </div>
     <h3>profile pic direct</h3>
     <img src="/portfolio/header/profilepic.jpg" alt="profile_pic" width="500" height="600">
+
+    <!-- Load other html snippets -->
+    <script>
+      $(document).ready(function(){
+        $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
+      });
+      window.onload = function() {
+        if (window.jQuery) {
+          // jQuery is loaded
+          alert("Yeah!");
+        } else {
+          // jQuery is not loaded
+          alert("Doesn't Work");
+        }
+      }
+    </script>
+
   </body>
 </html>
