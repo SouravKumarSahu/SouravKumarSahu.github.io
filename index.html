@@ -35,9 +35,7 @@
 
     <!-- Load other html snippets -->
     <script>
-      $(document).ready(function(){
-        $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
-      });
+    $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
       window.onload = function() {
         if (window.jQuery) {
           // jQuery is loaded
