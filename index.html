@@ -6,7 +6,9 @@
 
     <!-- Load other html snippets -->
     <script type="text/javascript">
-      $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
+      $(document).ready(function(){
+        $('#includeHeader').load("/portfolio/header/pageheader.html", function(){alert( "Load was performed." )});
+      });  
     </script>
 
     <!-- Required meta tags -->
