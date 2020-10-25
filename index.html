@@ -9,18 +9,19 @@
       $(document).ready(function(){
         $('#includeHeader').load("/portfolio/header/pageheader.html");
       });
+      window.onload = function() {
+        if (window.jQuery) {
+          // jQuery is loaded
+          alert("Yeah!");
+        } else {
+          // jQuery is not loaded
+          alert("Doesn't Work");
+        }
+      }
     </script>
 
     <script>
-    window.onload = function() {
-      if (window.jQuery) {
-        // jQuery is loaded
-        alert("Yeah!");
-      } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-      }
-    }
+
     </script>
 
     <!-- Required meta tags -->
