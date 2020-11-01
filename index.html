@@ -38,7 +38,7 @@
       document.querySelectorAll('.tabs__button').forEach(button => {
         a.addEventListener('click', () => {
           const tabsNumber = button.dataset.forTab
-          const tabsToActivate = document.querySelectorAll('.tabs__contents['data-tabs=${tabsNumber}']')
+          const tabsToActivate = document.querySelectorAll('.tabs__contents[data-tabs="${tabsNumber}"]')
 
           console.log(tabsNumber)
           console.log(tabsToActivate)
