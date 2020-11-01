@@ -35,8 +35,8 @@
   </body>
   <script type="text/javascript">
     function setupTabs() {
-      document.querySelectorAll('.tabs__contents').forEach(button => {
-        button.addEventListener('click', () => {
+      document.querySelectorAll('.tabs__button').forEach(button => {
+        a.addEventListener('click', () => {
           const tabsNumber = button.dataset.forTab
           const tabsToActivate = document.querySelectorAll('.tabs__contents['data-tabs=${tabsNumber}']')
 
