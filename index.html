@@ -25,9 +25,29 @@
     <!-- Header div -->
     <div id="pageheader" href="#"> </div>
     <!-- Body div -->
-    <div id="pagehome" href="#"></div>
+    <div class="tabs__contents tabs__contents--active" data__tabs="1" id="pagehome" href="#"></div>
+    <div class="tabs__contents " data__tabs="2" id="Projects" href="#">Projects</div>
+    <div class="tabs__contents " data__tabs="3" id="Scrum Tools" href="#">Scrum Tools</div>
+    <div class="tabs__contents " data__tabs="4" id="About" href="#">About</div>
     <!-- Footer div -->
     <div id="pagefooter" href="#"> </div>
 
   </body>
+  <script type="text/javascript">
+    function setupTabs() {
+      document.querySelectorAll('.tabs__contents').forEach(button => {
+        button.addEventListener('click', () => {
+          const tabsNumber = button.dataset.forTab
+          const tabsToActivate = document.querySelectorAll('.tabs__contents['data-tabs=${tabsNumber}']')
+
+          console.log(tabsNumber)
+          console.log(tabsToActivate)
+        })
+      })
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setupTabs()
+    })
+  </script>
 </html>
