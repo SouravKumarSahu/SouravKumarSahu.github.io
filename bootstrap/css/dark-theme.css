@@ -6,7 +6,7 @@ body {
   background: #808080
 }
 
-body.container {
+.container {
   color: #eee;
   background: #121212;
 }
