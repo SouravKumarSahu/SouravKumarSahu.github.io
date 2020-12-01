@@ -3,6 +3,10 @@
 }
 
 body {
+  background: #808080
+}
+
+body.container {
   color: #eee;
   background: #121212;
 }
@@ -12,5 +16,5 @@ a {
 }
 
 hr {
-  color: white;
+  border: #ffffff;
 }
